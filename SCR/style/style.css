@@ -1,0 +1,118 @@
+:root {
+    --color-background: #98e1f3;
+    --color-text-primary: #000000;
+    --color-text-main: #AAA;
+    --color-text-button: #141414;
+    --color-background-button: #54a38c;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 20vw;
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.top-buttons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    position: absolute;
+    top: 1px;
+    right: 10px; 
+    width: 100%; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+     position: relative; /* Garante que o z-index funcione */
+    z-index: 10; /* Coloca os botões acima dos anúncios */
+}
+
+.top-buttons a {
+    display: inline-block; /* Faz o link se comportar como um botão */
+    background-color: var(--color-background-button); /* Cor de fundo */
+    color: var(--color-text-button); /* Cor do texto */
+    border: 1px solid var(--color-text-button); /* Borda */
+    padding: 10px 15px; /* Espaçamento interno */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Mostra o cursor de clique */
+    transition: background-color 0.3s ease; /* Animação suave */
+}
+
+.top-buttons a:hover {
+    background-color: #FFD700; /* Cor ao passar o mouse */
+    color: #000000; /* Cor do texto ao passar o mouse */
+}
+
+.top-buttons a:active {
+    background-color: #197559; /* Cor ao clicar */
+    color: #FFFFFF; /* Cor do texto ao clicar */
+    transform: scale(0.95); /* Efeito de "pressionar" */
+}
+
+
+.content {
+    display: flex; 
+    align-items: center; 
+}
+
+.text-content {
+    flex: 2; 
+    color: var(--color-text-primary); 
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    font-family: Arial, sans-serif; 
+    line-height: 1.6;
+}
+
+.middle-text {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    margin: 50px auto; 
+    padding: 20px;
+    max-width: 800px; 
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--color-text-primary);
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+}
+
+.middle-text {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 300px;
+    text-align: center; 
+}
+
+.middle-text img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain; 
+}
+
